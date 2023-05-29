@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Knights of Valiantwind</title>
+    <link rel="stylesheet" href="/stylesheets/c.css">
+    <script src="./javascripts/utils/verifications.js"></script>
+    <script src="./javascripts/requests/matchesRequests.js"></script>
+    <script src="./javascripts/requests/usersRequests.js"></script>
+    <script src="./javascripts/login.js"></script>
+    <style>
+        .container {
+          position: absolute;
+          height: 120px;
+          margin-right: 400px;
+      }
+
+      .positioned-image {
+          position: absolute;
+          top: 161px;
+          left: -230px;
+      }
+    </style>
+</head>
+<body>
+  <form action="javascript:login()">
+    <div class="container">
+        <img src="logo.png" class="positioned-image">
+      </div>
+    <div class="login-box">
+    
+        <div class="input-box">
+            <input type="text" class="input-field" placeholder="Login" autocomplete="off" required id = "name">
+        </div>
+        <div class="input-box">
+            <input type="password" class="input-field" placeholder="Password" autocomplete="off" id="password">
+        </div>
+        <p id="msg2" class="warning2"></p>
+        <p id="msg1" class="warning1"></p>
+        <div class="input-submit3">
+            <button class="submit3-btn" id="submit3"></button>
+            <label for="submit3">Sign In</label>
+        </div>
+        <div class="sign-up-link">
+            <p>Don't have account? <a href="register.html">Sign Up</a></p>
+        </div>
+    </div>
+  </form>
+</body>
+</html>

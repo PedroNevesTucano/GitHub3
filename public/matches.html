@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Knights of Valiantwind</title>
+    <link rel="stylesheet" href="/stylesheets/c.css">
+    <script src="./javascripts/utils/verifications.js"></script>
+    <script src="./javascripts/requests/matchesRequests.js"></script>
+    <script src="./javascripts/requests/usersRequests.js"></script>
+    <script src="./javascripts/matches.js"></script>
+    <style>
+      .container {
+          position: absolute;
+          
+          height: 270px;
+          margin-right: 400px;
+      }
+
+      .positioned-image {
+          position: absolute;
+          top: -170px;
+          left: -250px;
+      }
+  </style>
+  </head>
+<body>
+  <div class="container">
+    <img src="logo.png" class="positioned-image">
+  </div>
+  <div class="login-box1">
+     <div class="input-submit4">
+      <button class="submit4-btn" id="submit4" onclick="createMatch()"></button>
+      <label for="submit4">Create my match</label>
+  </div>
+  <section id ="matches"></section>
+  <label for="matches"></label>
+    <div class="input-submit2">
+        <button class="submit2-btn" id="submit2" onclick="logout()"></button>
+        <label for="submit2">Logout</label>
+    </div>
+</div>
+</body>
+</html>
