@@ -105,7 +105,7 @@ class Deck {
     }
 
     click() {
-        if (this.clickAction && GameInfo.playerDeck.active == true && GameInfo.gameoverState == false) {
+        if (this.clickAction && GameInfo.playerDeck.active == true && GameInfo.game.player.state == "Playing" && GameInfo.gameoverState == false) {
             for (let card of this.cards) {
                 if (card.click()) {
                     this.clickAction(card.card);
